@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Don Bosco Concept High School</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f6f9;
+color:#222;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#000;
+padding:15px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+nav h1{
+color:#fff;
+font-size:18px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:#fff;
+text-decoration:none;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ffcc00;
+}
+
+.hero{
+height:50vh;
+background:url('https://images.unsplash.com/photo-1509062522246-3755977927d7') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+text-align:center;
+padding:20px;
+}
+
+.hero h2{
+background:rgba(0,0,0,0.7);
+padding:20px 40px;
+border-radius:10px;
+font-size:32px;
+}
+
+section{
+padding:120px 80px 80px 80px;
+}
+
+.intro{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:18px;
+line-height:1.8;
+margin-bottom:50px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.gallery-item{
+position:relative;
+overflow:hidden;
+border-radius:12px;
+}
+
+.gallery-item img{
+width:100%;
+display:block;
+transition:.4s;
+}
+
+.gallery-item:hover img{
+transform:scale(1.1);
+}
+
+.overlay{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,0.7);
+color:#fff;
+padding:15px;
+transform:translateY(100%);
+transition:.4s;
+font-size:14px;
+}
+
+.gallery-item:hover .overlay{
+transform:translateY(0);
+}
+
+.more-text{
+margin-top:70px;
+max-width:1000px;
+margin-left:auto;
+margin-right:auto;
+font-size:17px;
+line-height:1.9;
+text-align:center;
+}
+
+footer{
+background:#000;
+color:#fff;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+nav{padding:15px 20px;}
+section{padding:100px 20px;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>Don Bosco Concept High School</h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="academics.html">Academics</a></li>
+<li><a href="facilities.html">Facilities</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<h2>Life at Our Campus</h2>
+</div>
+
+<section>
+
+<div class="intro">
+Our gallery gives a glimpse into daily school life, academic activities, cultural celebrations, and sports events. Students actively participate in various programs that help them grow academically and personally.
+</div>
+
+<div class="gallery-grid">
+
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
+<div class="overlay">Smart classroom learning sessions with interactive teaching.</div>
+</div>
+
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94">
+<div class="overlay">Science laboratory practical experiments.</div>
+</div>
+
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1577896851231-70ef18881754">
+<div class="overlay">Cultural activities and annual celebrations.</div>
+</div>
+
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf">
+<div class="overlay">Outdoor sports and physical training sessions.</div>
+</div>
+
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
+<div class="overlay">Library reading and study hours.</div>
+</div>
+
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+<div class="overlay">Computer lab practical sessions.</div>
+</div>
+
+</div>
+
+<div class="more-text">
+At Don Bosco Concept High School, education extends beyond textbooks. Students are encouraged to participate in competitions, exhibitions, and co-curricular activities that build confidence and leadership skills. The school maintains a disciplined yet encouraging environment where students feel motivated to learn and grow every day.
+</div>
+
+</section>
+
+<footer>
+© 2026 Don Bosco Concept High School | All Rights Reserved
+</footer>
+
+</body>
+</html>

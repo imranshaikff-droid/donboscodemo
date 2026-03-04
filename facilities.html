@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facilities | Don Bosco Concept High School</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f6f9;
+color:#222;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#000;
+padding:15px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+nav h1{
+color:#fff;
+font-size:18px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:#fff;
+text-decoration:none;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ffcc00;
+}
+
+section{
+padding:120px 80px 80px 80px;
+}
+
+.section-title{
+text-align:center;
+font-size:32px;
+font-weight:700;
+margin-bottom:50px;
+}
+
+.facility-box{
+background:#fff;
+margin-bottom:25px;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+cursor:pointer;
+transition:.3s;
+}
+
+.facility-box:hover{
+transform:translateY(-5px);
+}
+
+.facility-title{
+font-size:20px;
+font-weight:600;
+}
+
+.facility-content{
+max-height:0;
+overflow:hidden;
+transition:max-height .5s ease;
+margin-top:15px;
+}
+
+.facility-content p{
+margin-bottom:15px;
+line-height:1.8;
+}
+
+.facility-content img{
+width:100%;
+max-width:400px;
+border-radius:10px;
+}
+
+footer{
+background:#000;
+color:#fff;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+nav{padding:15px 20px;}
+section{padding:100px 20px;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>Don Bosco Concept High School</h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="academics.html">Academics</a></li>
+<li><a href="facilities.html">Facilities</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<section>
+
+<h2 class="section-title">Our Facilities</h2>
+
+<div class="facility-box" onclick="toggleBox(this)">
+<div class="facility-title">Smart Classrooms</div>
+<div class="facility-content">
+<p>Our classrooms are equipped with digital boards and modern teaching tools. Teachers use visual content to make lessons easy to understand. Students learn concepts clearly with interactive teaching methods. The environment is clean, organized, and focused on learning.</p>
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
+</div>
+</div>
+
+<div class="facility-box" onclick="toggleBox(this)">
+<div class="facility-title">Science Laboratories</div>
+<div class="facility-content">
+<p>We provide well-equipped science labs for Physics, Chemistry, and Biology. Students perform experiments safely under teacher supervision. Practical learning helps them understand theory better. Safety measures are strictly followed in all lab sessions.</p>
+<img src="https://images.unsplash.com/photo-1581091870627-3f89a50e6a2c">
+</div>
+</div>
+
+<div class="facility-box" onclick="toggleBox(this)">
+<div class="facility-title">Computer Lab</div>
+<div class="facility-content">
+<p>Our computer lab has modern systems with updated software. Students learn basic computer skills and advanced applications. Technology education is integrated into regular curriculum. Supervision ensures disciplined and effective learning.</p>
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+</div>
+</div>
+
+<div class="facility-box" onclick="toggleBox(this)">
+<div class="facility-title">Library</div>
+<div class="facility-content">
+<p>The school library offers a wide range of academic books and reference materials. Students are encouraged to develop reading habits. A calm and quiet environment helps in focused study. Regular reading sessions are conducted.</p>
+<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
+</div>
+</div>
+
+<div class="facility-box" onclick="toggleBox(this)">
+<div class="facility-title">Playground & Sports</div>
+<div class="facility-content">
+<p>We believe physical activity is essential for growth. The school provides space for outdoor games and sports activities. Students participate in competitions and regular practice sessions. Sports build teamwork, discipline, and fitness.</p>
+<img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf">
+</div>
+</div>
+
+<div class="facility-box" onclick="toggleBox(this)">
+<div class="facility-title">Safe Campus</div>
+<div class="facility-content">
+<p>The campus is secure and monitored. Discipline and safety are top priorities. Teachers and staff ensure students feel comfortable and protected. Parents can trust the school environment for their children.</p>
+<img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238">
+</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 Don Bosco Concept High School | All Rights Reserved
+</footer>
+
+<script>
+function toggleBox(box){
+let content = box.querySelector(".facility-content");
+if(content.style.maxHeight){
+content.style.maxHeight = null;
+}else{
+content.style.maxHeight = content.scrollHeight + "px";
+}
+}
+</script>
+
+</body>
+</html>
